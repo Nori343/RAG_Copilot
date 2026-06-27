@@ -1,0 +1,187 @@
+{
+  "version": "1.0",
+  "files": [
+    {
+      "path": "raw/api_webhooks.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "webhooks",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/api_authentication.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "authentication",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/admin_sso_scim.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "enterprise",
+      "product_area": "identity",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/security_data_residency.md",
+      "doc_type": "security",
+      "plan_tier": "enterprise",
+      "product_area": "compliance",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/audit_logs.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "all",
+      "product_area": "audit",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/api_workflows.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "workflows",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/api_users.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "users",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/api_integrations.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "integrations",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/admin_workspace.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "all",
+      "product_area": "workspace",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/admin_roles.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "all",
+      "product_area": "permissions",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/security_encryption.md",
+      "doc_type": "security",
+      "plan_tier": "all",
+      "product_area": "encryption",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/security_access.md",
+      "doc_type": "security",
+      "plan_tier": "all",
+      "product_area": "access_control",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/integration_slack.md",
+      "doc_type": "integration",
+      "plan_tier": "all",
+      "product_area": "slack",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/integration_jira.md",
+      "doc_type": "integration",
+      "plan_tier": "pro",
+      "product_area": "jira",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/integration_salesforce.md",
+      "doc_type": "integration",
+      "plan_tier": "enterprise",
+      "product_area": "salesforce",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/onboarding_getting_started.md",
+      "doc_type": "onboarding",
+      "plan_tier": "all",
+      "product_area": "getting_started",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/onboarding_api_quickstart.md",
+      "doc_type": "onboarding",
+      "plan_tier": "all",
+      "product_area": "api",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/pricing_plans.md",
+      "doc_type": "pricing",
+      "plan_tier": "all",
+      "product_area": "pricing",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/faq_general.md",
+      "doc_type": "onboarding",
+      "plan_tier": "all",
+      "product_area": "faq",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/faq_troubleshooting.md",
+      "doc_type": "onboarding",
+      "plan_tier": "all",
+      "product_area": "troubleshooting",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/overview_platform.md",
+      "doc_type": "onboarding",
+      "plan_tier": "all",
+      "product_area": "overview",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/overview_security.md",
+      "doc_type": "security",
+      "plan_tier": "all",
+      "product_area": "overview",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/admin_billing.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "all",
+      "product_area": "billing",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/api_events.md",
+      "doc_type": "api_reference",
+      "plan_tier": "all",
+      "product_area": "events",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/admin_notifications.md",
+      "doc_type": "admin_guide",
+      "plan_tier": "all",
+      "product_area": "notifications",
+      "doc_version": "1.0"
+    },
+    {
+      "path": "raw/security_incident_response.md",
+      "doc_type": "security",
+      "plan_tier": "enterprise",
+      "product_area": "incident_response",
+      "doc_version": "1.0"
+    }
+  ]
+}

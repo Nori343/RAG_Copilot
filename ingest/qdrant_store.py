@@ -6,6 +6,7 @@ from turtle import distance
 import uuid
 from typing import Any
 
+from pydantic import Field
 from qdrant_client import QdrantClient
 from qdrant_client.models import (
     Distance,
@@ -14,6 +15,7 @@ from qdrant_client.models import (
     MatchValue,
     PointStruct,
     VectorParams,
+    MatchAny
 )
 
 from config.settings import (
@@ -88,3 +90,45 @@ def collection_count()->int:
         return 0
     data = client.get_collection(QDRANT_COLLECTION)
     return data.points_count or 0
+
+def scroll_all_points()->list[dict[str, Any]]:
+    client = get_client()
+    if not client.collection_exists(QDRANT_COLLECTION):
+        return []
+    
+    points = []
+    offset = None
+
+    while True:
+        records, offset = client.scroll(
+            collection_name=QDRANT_COLLECTION,
+            limit=100,
+            offset=offset,
+            with_payload=True,
+            with_vectors=False,
+        )         
+        for record in records:
+            if record.payload:
+                points.append(dict(record.payload))
+        if offset is None:
+            break
+    return points
+        
+
+def build_qdrant_filter(filters: dict[str, str] | None)-> Filter | None:
+    if not filters:
+        return None
+    
+    conditions = []
+    for key, val in filters.items():
+        if key == "plan_tier":
+            conditions.append(FieldCondition(
+                key = "plan_tier", 
+                match= MatchAny(any=[val, "all"])
+            ))
+        else:
+            conditions.append(FieldCondition(
+                key=key,
+                match=MatchValue(value=val)
+            ))
+    return Filter(must=conditions) if conditions else None

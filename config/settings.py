@@ -32,5 +32,18 @@ OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
 EMBEDDING_DIM = 1536  # text-embedding-3-small
 
+
+RERANK_ENABLED = os.getenv("RERANK_ENABLED", "true").lower() in ("true", "1", "yes")
+RETRIEVAL_CANDIDATE_K = int(os.getenv("RETRIEVAL_CANDIDATE_K", "20"))
+RERANK_TOP_K = int(os.getenv("RERANK_TOP_K", "5"))
+
 CHUNK_SIZE = 600
 CHUNK_OVERLAP = 100
+
+# Citation / abstain
+ABSTAIN_MESSAGE = (
+    "I don't have enough information in the RelayBoard documentation to answer that."
+)
+
+# RRF constant
+RRF_K = 60

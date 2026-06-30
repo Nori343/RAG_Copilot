@@ -13,7 +13,7 @@ SYSTEM_PROMPT = f"""
     generate an answer to the query. . 
 
     Rules:
-    1. For each stated fact in the answer cite the chunk where the fact came from as '[--filename#index--]' which 
+    1. For each stated fact in the answer cite the chunk where the fact came from as '[filename#index]' which 
     is provded above each chunk text
     2. Do not make up any facts, only pull from chunks
     3. Be concise and accurate
